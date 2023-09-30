@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    height:100vh;
+    Background: #2d5ee2;
+    display:grid;
+}
+.container{
+    width: 100%;
+    
+    height: 100%;
+
+    display: flex;
+}
+.calculator{
+    background: #09021a;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 3px rgba(206, 9, 9, 0.219);
+    margin:auto;
+
+    border-radius: 10px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height:60px;
+    border-radius: 10px;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size:1.7em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 10px;
+
+}
+.calculator form input.NumpadBtns{
+    background: #cd64e2;
+}
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .display input{
+    text-align: right;
+    flex: 2;
+    font-size: 45px;
+    box-shadow: none;
+    padding:20px;
+    box-sizing: border-box;
+    background: #d575ec; 
+    box-shadow: 0 0 10px 3px #fd4f4f33;
+    height:80px;
+    color: white;
+}
+
+form input.equal{
+width: 145px;
+background: #66a2e6
+}
+form input.ac,form input.del{
+    background: #c0e754
+}
+
+.symbols{
+    background-color: #eb950c;
+}
+.special{
+    background: #52d8c8;
+}
+
+.calculator form input:hover {
+    box-shadow: 0px 0px 5px 3px #0c09e000;
+}
